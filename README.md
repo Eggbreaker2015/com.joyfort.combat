@@ -12,20 +12,20 @@
 
 ## 安装
 
-当前仓库通过 `Packages/com.joyfort.combat` 以 embedded package 使用。其他项目通过 Git 安装时，还必须在项目 `Packages/manifest.json` 中安装 `com.mrdav30.fixedmathsharp.lean` `v5.0.1`；该依赖当前来自 Git，因此消费项目需要提供对应 Git URL。
+当前 MyCombatSystem 仓库通过 `Packages/com.joyfort.combat` 以 embedded package 使用；独立版本发布在 `https://github.com/Eggbreaker2015/com.joyfort.combat`。其他项目通过 Git 安装时，还必须在项目 `Packages/manifest.json` 中安装 `com.mrdav30.fixedmathsharp.lean` `v5.0.1`；该依赖当前来自 Git，因此消费项目需要提供对应 Git URL。
 
-若包仍保存在本仓库，可在新项目的 `Packages/manifest.json` 中加入：
+新项目的 `Packages/manifest.json` 可加入：
 
 ```json
 {
   "dependencies": {
     "com.mrdav30.fixedmathsharp.lean": "https://github.com/mrdav30/FixedMathSharp-Unity.git?path=/com.mrdav30.fixedmathsharp.lean#v5.0.1",
-    "com.joyfort.combat": "<本仓库 Git URL>?path=/Packages/com.joyfort.combat#<固定 tag 或 commit>"
+    "com.joyfort.combat": "https://github.com/Eggbreaker2015/com.joyfort.combat.git#v0.1.0"
   }
 }
 ```
 
-发布到独立仓库后，把 `com.joyfort.combat` 的值改为该包仓库的固定 tag 或 commit URL。不要让生产项目长期跟随可变分支。
+升级时把 `v0.1.0` 改为新的发布 tag；不要让生产项目长期跟随可变分支。
 
 包的生产程序集不依赖 `GameApp.*`、`GameUI`、Joyfort UI Framework 或 VContainer。具体玩法应在消费项目中通过 `BattleInstance` 或自己的 application gateway 组合。
 
