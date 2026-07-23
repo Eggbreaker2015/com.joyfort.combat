@@ -1,0 +1,21 @@
+{
+  "name": "Combat.Unity.Editor",
+  "rootNamespace": "Combat.Unity.Editor",
+  "references": [
+    "Combat.Foundation",
+    "Combat.Core",
+    "Combat.Runtime",
+    "Combat.Unity"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

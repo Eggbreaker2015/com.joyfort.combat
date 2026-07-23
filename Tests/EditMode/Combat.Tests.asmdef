@@ -1,0 +1,25 @@
+{
+  "name": "Combat.Tests",
+  "rootNamespace": "Combat.Tests",
+  "references": [
+    "Combat.Foundation",
+    "Combat.Core",
+    "Combat.Runtime",
+    "Combat.Unity",
+    "Combat.Unity.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "noEngineReferences": false
+}

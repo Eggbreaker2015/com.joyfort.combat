@@ -1,0 +1,13 @@
+{
+  "name": "com.joyfort.combat",
+  "version": "0.1.0",
+  "displayName": "Joyfort Combat Framework",
+  "description": "Deterministic headless combat rules, runtime presentation bridge, and Unity/Tuanjie authoring adapters.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.mrdav30.fixedmathsharp.lean": "5.0.1"
+  },
+  "author": {
+    "name": "Joyfort"
+  }
+}
