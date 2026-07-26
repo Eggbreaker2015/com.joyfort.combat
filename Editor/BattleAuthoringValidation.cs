@@ -1567,7 +1567,7 @@ namespace Combat.Unity.Editor
         private static void AppendAssetIdentity(System.Text.StringBuilder key, Object asset)
         {
 #if UNITY_6000_0_OR_NEWER
-            key.Append(asset.GetEntityId());
+            key.Append(asset.GetEntityId().ToString());
 #else
             key.Append(asset.GetInstanceID());
 #endif
