@@ -1,12 +1,13 @@
 {
   "name": "com.joyfort.combat",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "displayName": "Joyfort Combat Framework",
   "description": "Deterministic headless combat rules, runtime presentation bridge, and Unity/Tuanjie authoring adapters.",
   "unity": "2022.3",
   "dependencies": {
     "com.mrdav30.fixedmathsharp.lean": "5.0.1"
   },
+  "documentationUrl": "https://github.com/Eggbreaker2015/com.joyfort.combat/tree/main/Documentation~",
   "author": {
     "name": "Joyfort"
   }
