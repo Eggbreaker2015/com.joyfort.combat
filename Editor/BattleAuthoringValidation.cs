@@ -1556,11 +1556,21 @@ namespace Combat.Unity.Editor
             var key = new System.Text.StringBuilder();
             for (var i = existingIndex; i < visiting.Count; i++)
             {
-                key.Append(visiting[i].GetInstanceID()).Append(">");
+                AppendAssetIdentity(key, visiting[i]);
+                key.Append(">");
             }
 
-            key.Append(repeated.GetInstanceID());
+            AppendAssetIdentity(key, repeated);
             return key.ToString();
+        }
+
+        private static void AppendAssetIdentity(System.Text.StringBuilder key, Object asset)
+        {
+#if UNITY_6000_0_OR_NEWER
+            key.Append(asset.GetEntityId());
+#else
+            key.Append(asset.GetInstanceID());
+#endif
         }
 
         private static void ValidateConverterPass(
